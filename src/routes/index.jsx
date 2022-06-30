@@ -1,9 +1,9 @@
 import React from 'react';
-
+import {InputComponent} from '../components/Input'
 const Routes = () => {
 	return (
 		<div>
-			<h1>Hello</h1>
+			<InputComponent></InputComponent>
 		</div>
 	)
 }
