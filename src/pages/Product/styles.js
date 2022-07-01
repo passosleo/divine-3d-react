@@ -6,17 +6,14 @@ const white = "#F5F5F5";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   max-width: 1400px;
+  margin: 0 auto;
   padding: 60px;
 `;
 
 export const ProductContainer = styled.div`
   display: flex;
-
-  div {
-    width: 500px;
-    padding-left: 60px;
-  }
 `;
 
 export const ProductImage = styled.img`
@@ -32,6 +29,22 @@ export const ProductImage = styled.img`
   }
 `;
 
+export const PricingContainer = styled.div`
+  width: 500px;
+  padding-left: 60px;
+`;
+
 export const ProductTitle = styled.h2`
   font-size: 28px;
+`;
+
+export const ProductRating = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
+
+export const RatingText = styled.p`
+  font-size: 16px;
+  font-weight: 600;
 `;
