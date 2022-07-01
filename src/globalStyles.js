@@ -1,16 +1,21 @@
-import { createGlobalStyle } from 'styled-components';
- 
+import { createGlobalStyle } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: Source Sans Pro, Sans-Serif;
+    font-family: "Source Sans Pro", Sans-Serif;
     color: #222222;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: 600;
   }
 
   a {
       text-decoration: none;
   }
 `;
- 
+
 export default GlobalStyle;

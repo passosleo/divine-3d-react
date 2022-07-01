@@ -1,11 +1,10 @@
-
 import React from "react";
 import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
 import Layout from "../layout";
-import Home  from "../pages/Home";
+import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register/Register";
-import Product from "../pages/Product";
+import Product from "../pages/Product/Product";
 import Checkout from "../pages/Checkout";
 
 const Routes = () => {
@@ -14,10 +13,10 @@ const Routes = () => {
       <Layout>
         <Switch>
           <Route path="/" element={<Home />} />
-					<Route path="login" element={<Login />} />
-					<Route path="cadastro" element={<Register />} />
-					<Route path="produto" element={<Product />} />
-					<Route path="Checkout" element={<Checkout />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cadastro" element={<Register />} />
+          <Route path="produto" element={<Product />} />
+          <Route path="checkout" element={<Checkout />} />
         </Switch>
       </Layout>
     </BrowserRouter>
