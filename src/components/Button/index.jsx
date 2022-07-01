@@ -1,6 +1,8 @@
-export const Button = () => {
+import {Button} from './styles.js'
+
+export const ButtonComponent = ({text}) => {
     return(
-        <button></button>
+        <Button>{text}</Button>
     );
 };
 
