@@ -4,7 +4,7 @@ import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
 import Layout from "../layout";
 import Home  from "../pages/Home";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
+import Register from "../pages/Register/Register";
 import Product from "../pages/Product";
 import Checkout from "../pages/Checkout";
 
