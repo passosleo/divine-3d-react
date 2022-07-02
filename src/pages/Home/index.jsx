@@ -1,24 +1,35 @@
-import React from 'react'
-import {Divider, Image, Email,InputEmail} from './styles.js'
-import banner from '../../assets/images/banner/banner.png'
-import { FaEnvelope } from "react-icons/fa";
-import {FooterComponent} from '../../components/Footer/'
-
+import React from "react";
+import { Divider, Image } from "./styles.js";
+import { PromotionsEmail } from "../../components/PromotionsEmail/";
+import banner from "../../assets/images/banner/cropped.16_to_9.png";
+import { Carousel } from "react-responsive-carousel";
+import { FooterComponent } from "../../components/Footer/";
+import { products } from "../../assets/images/products.js";
 const Home = () => {
   return (
     <div>
-      {/* <Image src={banner} alt="" /> */}
-      <Divider><div>Destaque</div></Divider>
-      <Divider><div>Lançamentos</div></Divider>
-      <Email>
-        <FaEnvelope  color="#F5F5F5" size="5em"/>
-        <p>Receba nossas ofertas e lançamentos</p>
-        <InputEmail placeholder="e-mail"/>
-      </Email>
-      <Divider><div>Categorias</div></Divider>
+      <Image src={banner} alt="" />
+      <Divider>
+        <div>Destaque</div>
+        <Carousel>
+          {/* <div>
+            {products.map((item) => (
+              <>
+                <img src={item.image1} />
+              </>
+            ))}
+          </div> */}
+        </Carousel>
+      </Divider>
+      <Divider>
+        <div>Lançamentos</div>
+      </Divider>
+      <PromotionsEmail />
+      <Divider>
+        <div>Categorias</div>
+      </Divider>
       <FooterComponent></FooterComponent>
     </div>
-   
   );
 };
 
