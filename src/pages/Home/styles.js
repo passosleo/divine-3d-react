@@ -11,7 +11,7 @@ export const Divider = styled.div`
   background: #950101;
   display: flex;
   justify-content: center;
-  margin: 25px auto;
+  margin: 50px auto;
 
   div {
     z-index: 1;
@@ -22,4 +22,9 @@ export const Divider = styled.div`
     font-weight: bold;
     padding: 0 25px;
   }
+`;
+
+export const ContainerCarousel = styled.div`
+  display: flex;
+  justify-content: center;
 `;

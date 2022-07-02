@@ -6,20 +6,40 @@ import { CarouselComponent } from "../../components/Carousel/";
 import { FooterComponent } from "../../components/Footer/";
 
 const Home = () => {
+  const DividerComponent = ({ text }) => {
+    return (
+      <>
+        <Divider>
+          <div>{text}</div>
+        </Divider>
+      </>
+    );
+  };
+
   return (
     <div>
       <Image src={banner} alt="" />
-      <Divider>
-        <div>Destaque</div>
-      </Divider>
-      <CarouselComponent />
-      <Divider>
-        <div>Lançamentos</div>
-      </Divider>
+
+      <DividerComponent text="Destaque" />
+
+      <ContainerCarousel>
+        <CarouselComponent />
+      </ContainerCarousel>
+
+      <DividerComponent text="Promoções" />
+
+      <ContainerCarousel>
+        <CarouselComponent />
+      </ContainerCarousel>
+
       <PromotionsEmail />
-      <Divider>
-        <div>Categorias</div>
-      </Divider>
+
+      <DividerComponent text="Categorias" />
+
+      <ContainerCarousel>
+        <CarouselComponent isCategory={true} />
+      </ContainerCarousel>
+
       <FooterComponent></FooterComponent>
     </div>
   );

@@ -46,7 +46,8 @@ export const products = [
     discount: "39,99",
     description:
       "Além de melhorar a organização de sua mesa, permite ter as mãos livres para assistir lives ou vídeos, fazer vídeo-chamadas entre outras atividades comuns do nosso dia. Também pode ser utilizado com carregador conectado.",
-    image: "1652128479654-suporte-smartphone-universal_0.jpg",
+    image:
+      "https://ecoms1.com/51262/@v3/1652128479654-suporte-smartphone-universal_0.jpg",
     category: "utilidades",
     altura: "7cm",
     largura: "8,5cm",
@@ -59,7 +60,8 @@ export const products = [
     discount: "89,99",
     description:
       "Perfeito para organizar melhor sua mesa além de cuidar bem do seu headphone. O suporte tem 20 cm de altura, por isso sugerimos que verifique se o seu headphone tem no máximo esta altura para que ele fique perfeitamente suspenso.",
-    image: "1652127243811-suporte-de-mesa-headphone_0.jpg",
+    image:
+      "https://ecoms1.com/51262/@v3/1652127243811-suporte-de-mesa-headphone_0.jpg",
     category: "utilidades",
     altura: "20cm",
     largura: "18cm",
@@ -86,7 +88,7 @@ export const products = [
     description:
       "Esta é a solução definitiva para você evitar que seus fones se enrolem e tomem seu tempo para desfazer aquela confusão toda vez que deseja utiliza-los.",
     image:
-      "https://ecoms1.com/51262/imgs/big/@v3/1652126512809-organizador-de-fone-de-ouvido_0.jpg.avifg",
+      "https://ecoms1.com/51262/@v3/1652126512809-organizador-de-fone-de-ouvido_0.jpg",
     category: "utilidades",
     dimensions:
       "Possuí 7,5cm de largura por 1,5 cm de profundidade e 7,5 cm de altura",
@@ -348,5 +350,44 @@ export const products = [
     altura: "16,5cm",
     largura: "5,5cm",
     profundida: "18,5cm",
+  },
+  {
+    id: 28,
+    name: "O Pensador",
+    price: "89,90",
+    discount: "69,90",
+    description: "Homenzinhos Escalando. Contém 3 homenzinhos.",
+    image:
+      "https://img.elo7.com.br/product/zoom/37D38E4/o-pensador-low-poly-15-cm-decoracao-impressao-3d.jpg",
+    altura: "15cm",
+    largura: "7.50cm",
+    profundida: "10cm",
+    tag: ["escultura"],
+  },
+  {
+    id: 29,
+    name: "Elefante",
+    price: "39,90",
+    discount: "29,90",
+    description: "Homenzinhos Escalando. Contém 3 homenzinhos.",
+    image:
+      "https://www.copos.ind.br/img/images/impress%C3%A3o%203D%20elefante%20com%20vaso.jpeg",
+    altura: "6cm",
+    largura: "8cm",
+    profundida: "5cm",
+    tag: ["escultura"],
+  },
+  {
+    id: 30,
+    name: "Elefante",
+    price: "39,90",
+    discount: "29,90",
+    description: "Homenzinhos Escalando. Contém 3 homenzinhos.",
+    image:
+      "https://www.copos.ind.br/img/images/impress%C3%A3o%203D%20elefante%20com%20vaso.jpeg",
+    altura: "6cm",
+    largura: "8cm",
+    profundida: "5cm",
+    tag: ["escolar"],
   },
 ];

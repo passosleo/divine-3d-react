@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const ContainerCarousel = styled.div`
   display: flex;
   width: 90%;
-  padding: 0 60px;
-  justify-content: center;
   img {
     width: 12vw !important;
     height: 12vw !important;
