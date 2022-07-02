@@ -7,8 +7,7 @@ export const Image = styled.img`
 `;
 export const Divider = styled.div`
   height: 2px;
-  max-width: 1200px;
-  width: 100%;
+  width: 90%;
   background: #950101;
   display: flex;
   justify-content: center;
