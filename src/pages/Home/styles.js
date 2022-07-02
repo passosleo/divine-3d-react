@@ -7,12 +7,11 @@ export const Image = styled.img`
 `;
 export const Divider = styled.div`
   height: 2px;
-  max-width: 1200px;
-  width: 100%;
+  width: 90%;
   background: #950101;
   display: flex;
   justify-content: center;
-  margin: 25px auto;
+  margin: 50px auto;
 
   div {
     z-index: 1;
@@ -23,4 +22,9 @@ export const Divider = styled.div`
     font-weight: bold;
     padding: 0 25px;
   }
+`;
+
+export const ContainerCarousel = styled.div`
+  display: flex;
+  justify-content: center;
 `;

@@ -1,33 +1,45 @@
 import React from "react";
-import { Divider, Image } from "./styles.js";
+import { Divider, Image, ContainerCarousel } from "./styles.js";
 import { PromotionsEmail } from "../../components/PromotionsEmail/";
 import banner from "../../assets/images/banner/cropped.16_to_9.png";
-import { Carousel } from "react-responsive-carousel";
+import { CarouselComponent } from "../../components/Carousel/";
 import { FooterComponent } from "../../components/Footer/";
-import { products } from "../../assets/images/products.js";
+
 const Home = () => {
+  const DividerComponent = ({ text }) => {
+    return (
+      <>
+        <Divider>
+          <div>{text}</div>
+        </Divider>
+      </>
+    );
+  };
+
   return (
     <div>
       <Image src={banner} alt="" />
-      <Divider>
-        <div>Destaque</div>
-        <Carousel>
-          {/* <div>
-            {products.map((item) => (
-              <>
-                <img src={item.image1} />
-              </>
-            ))}
-          </div> */}
-        </Carousel>
-      </Divider>
-      <Divider>
-        <div>Lançamentos</div>
-      </Divider>
+
+      <DividerComponent text="Destaque" />
+
+      <ContainerCarousel>
+        <CarouselComponent />
+      </ContainerCarousel>
+
+      <DividerComponent text="Promoções" />
+
+      <ContainerCarousel>
+        <CarouselComponent />
+      </ContainerCarousel>
+
       <PromotionsEmail />
-      <Divider>
-        <div>Categorias</div>
-      </Divider>
+
+      <DividerComponent text="Categorias" />
+
+      <ContainerCarousel>
+        <CarouselComponent isCategory={true} />
+      </ContainerCarousel>
+
       <FooterComponent></FooterComponent>
     </div>
   );
