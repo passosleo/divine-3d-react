@@ -12,8 +12,8 @@ export const Container = styled.div`
 `;
 
 export const ProductImage = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   border-radius: 24px;
   cursor: pointer;
   transition: 300ms;
@@ -25,7 +25,7 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductContainer = styled.div`
-  width: 500px;
+  width: 480px;
   padding-left: 60px;
 `;
 
@@ -37,6 +37,7 @@ export const ProductTitle = styled.h2`
 export const SpacedContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 `;
 
 export const BoldText = styled.p`
@@ -88,4 +89,43 @@ export const ColorBox = styled.div`
   margin: 0 3px;
   background-color: ${(props) => props.color};
   cursor: pointer;
+`;
+
+export const SimulationInput = styled.div`
+  display: flex;
+  margin-top: 5px;
+`;
+
+export const Input = styled.input`
+  border: 1px solid #d7d7d7;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 6px 0 0 6px;
+  height: 28px;
+`;
+
+export const Button = styled.button`
+  font-family: Source Sans Pro, sans-serif;
+  height: 30px;
+  background-color: ${bg};
+  color: ${white};
+  border-radius: 0 6px 6px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+`;
+
+export const ShippingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+`;
+
+export const DeliveryContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
 `;

@@ -1,20 +1,25 @@
 import React from "react";
 import {
   BoldText,
+  Button,
   ColorBox,
   Colors,
   Conditions,
   Container,
+  DeliveryContainer,
+  Input,
   OldPrice,
   OldPriceContainer,
   Price,
   ProductContainer,
   ProductImage,
   ProductTitle,
+  ShippingContainer,
+  SimulationInput,
   SpacedContainer,
 } from "./styles";
 import product from "../../assets/images/vasos/product.jpg";
-import { FaStar, FaHeart } from "react-icons/fa";
+import { FaStar, FaHeart, FaTruck, FaShippingFast } from "react-icons/fa";
 import { DiscountTagComponent } from "../../components/DiscountTag";
 
 const stars = [...Array(5).keys()].map((i) => i + 1);
@@ -60,6 +65,43 @@ const Product = () => {
               <br />
               ou 3x de <strong>R$18,90</strong> no cartão
             </Conditions>
+          </div>
+        </SpacedContainer>
+        <SpacedContainer>
+          <ShippingContainer>
+            <BoldText>Frete:</BoldText>
+            <SimulationInput>
+              <Input type="text" placeholder="00000-000" />
+              <Button>Calcular</Button>
+            </SimulationInput>
+          </ShippingContainer>
+          <div>
+            <DeliveryContainer>
+              <FaShippingFast
+                color="#950101"
+                size="1.2em"
+                style={{ marginRight: 10 }}
+              />
+              <div>
+                <p>Expresso:</p>
+                <p>
+                  3 dias úteis - <strong>R$15,90</strong>
+                </p>
+              </div>
+            </DeliveryContainer>
+            <DeliveryContainer>
+              <FaTruck
+                color="#950101"
+                size="1.2em"
+                style={{ marginRight: 10 }}
+              />
+              <div>
+                <p>Normal:</p>
+                <p>
+                  7 dias úteis - <strong>R$9,90</strong>
+                </p>
+              </div>
+            </DeliveryContainer>
           </div>
         </SpacedContainer>
       </ProductContainer>
