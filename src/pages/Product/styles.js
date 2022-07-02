@@ -25,7 +25,7 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductContainer = styled.div`
-  width: 480px;
+  width: 470px;
   padding-left: 60px;
 `;
 
@@ -36,6 +36,7 @@ export const ProductTitle = styled.h2`
 
 export const SpacedContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
 `;
@@ -71,15 +72,15 @@ export const Conditions = styled.p`
   margin-top: -10px;
 `;
 
-export const Colors = styled.div`
+export const JustifyEndContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+`;
 
-  div {
-    display: flex;
-    margin-top: 5px;
-  }
+export const Colors = styled.div`
+  display: flex;
+  margin-top: 5px;
 `;
 
 export const ColorBox = styled.div`
@@ -116,12 +117,6 @@ export const Button = styled.button`
   padding: 0 10px;
   font-size: 14px;
   font-weight: 600;
-`;
-
-export const ShippingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 `;
 
 export const DeliveryContainer = styled.div`

@@ -8,19 +8,20 @@ import {
   Container,
   DeliveryContainer,
   Input,
+  JustifyEndContainer,
   OldPrice,
   OldPriceContainer,
   Price,
   ProductContainer,
   ProductImage,
   ProductTitle,
-  ShippingContainer,
   SimulationInput,
   SpacedContainer,
 } from "./styles";
 import product from "../../assets/images/vasos/product.jpg";
 import { FaStar, FaHeart, FaTruck, FaShippingFast } from "react-icons/fa";
 import { DiscountTagComponent } from "../../components/DiscountTag";
+import { ButtonComponent } from "../../components/Button";
 
 const stars = [...Array(5).keys()].map((i) => i + 1);
 const colors = ["#1A4D2E", "#F15412", "#1363DF", "#F32424", "#FF7396"];
@@ -50,14 +51,14 @@ const Product = () => {
           <OldPrice>R$69,90</OldPrice>
         </OldPriceContainer>
         <SpacedContainer>
-          <Colors>
+          <JustifyEndContainer>
             <BoldText>Cores:</BoldText>
-            <div>
+            <Colors>
               {colors.map((color, index) => (
                 <ColorBox key={index} color={color} />
               ))}
-            </div>
-          </Colors>
+            </Colors>
+          </JustifyEndContainer>
           <div>
             <Price>R$49,90</Price>
             <Conditions>
@@ -68,13 +69,13 @@ const Product = () => {
           </div>
         </SpacedContainer>
         <SpacedContainer>
-          <ShippingContainer>
+          <JustifyEndContainer>
             <BoldText>Frete:</BoldText>
             <SimulationInput>
               <Input type="text" placeholder="00000-000" />
               <Button>Calcular</Button>
             </SimulationInput>
-          </ShippingContainer>
+          </JustifyEndContainer>
           <div>
             <DeliveryContainer>
               <FaShippingFast
@@ -104,6 +105,10 @@ const Product = () => {
             </DeliveryContainer>
           </div>
         </SpacedContainer>
+        <JustifyEndContainer>
+          <ButtonComponent variation="white" text="Adicionar ao carrinho" />
+          <ButtonComponent variation="red" text="Comprar" />
+        </JustifyEndContainer>
       </ProductContainer>
     </Container>
   );
