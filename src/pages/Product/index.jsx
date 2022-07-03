@@ -173,14 +173,14 @@ const Product = () => {
           userName="Luciana"
           text="Muito bom!"
           rating={5}
-          date="22/01/2022"
+          date="22/01/22"
           photo={person1}
         />
         <CommentComponent
           userName="Fernando"
           text="Adorei o produto, muito bem feito. Recomendo!"
           rating={5}
-          date="08/03/2022"
+          date="08/03/22"
           photo={person2}
         />
       </SectionsContainer>

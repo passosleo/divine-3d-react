@@ -3,8 +3,8 @@ import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
 import Layout from "../layout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
-import Register from "../pages/Register/Register";
-import Product from "../pages/Product/Product";
+import Register from "../pages/Register";
+import Product from "../pages/Product";
 import Checkout from "../pages/Checkout";
 
 const Routes = () => {

@@ -7,7 +7,7 @@ export const CommentComponent = (props) => {
   const stars = [...Array(rating).keys()].map((i) => i + 1);
   return (
     <CommentContainer>
-      <img src={photo} alt="Foto de Perfil do Usuário" />
+      <img src={photo} alt={userName} />
       <div>
         <p>{userName}</p>
         {stars.map((i) => (
