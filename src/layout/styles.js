@@ -4,7 +4,6 @@ const bg = "#950101";
 const white = "#F5F5F5";
 
 export const Container = styled.div`
-  width: 100vw;
   margin-top: 60px;
 `;
 

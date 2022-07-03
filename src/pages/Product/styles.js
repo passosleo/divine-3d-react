@@ -5,10 +5,10 @@ const white = "#F5F5F5";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  max-width: 1400px;
+  flex-direction: column;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 80px;
+  padding: 80px 20px;
 `;
 
 export const ProductImage = styled.img`
@@ -26,7 +26,6 @@ export const ProductImage = styled.img`
 
 export const ProductContainer = styled.div`
   width: 470px;
-  padding-left: 60px;
 `;
 
 export const ProductTitle = styled.h2`
@@ -78,9 +77,16 @@ export const JustifyEndContainer = styled.div`
   justify-content: flex-end;
 `;
 
-export const Colors = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export const ColorBox = styled.div`
@@ -90,11 +96,6 @@ export const ColorBox = styled.div`
   margin: 0 3px;
   background-color: ${(props) => props.color};
   cursor: pointer;
-`;
-
-export const SimulationInput = styled.div`
-  display: flex;
-  margin-top: 5px;
 `;
 
 export const Input = styled.input`
@@ -123,4 +124,27 @@ export const DeliveryContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 15px;
+`;
+
+export const SectionsContainer = styled.div`
+  margin-top: 100px;
+`;
+
+export const JustifyText = styled.p`
+  text-align: justify;
+`;
+
+export const Table = styled.table`
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+
+  td {
+    border-bottom: 1px solid #d7d7d7;
+    padding: 5px 25px;
+  }
+
+  td:last-child {
+    border-left: 1px solid #d7d7d7;
+  }
 `;

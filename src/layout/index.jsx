@@ -26,11 +26,13 @@ const Layout = ({ children }) => {
           </Link>
           <SearchInput placeholder="Procurar..." />
           <UserActions>
-            <FaShoppingCart
-              color="#F5F5F5"
-              size="1.3em"
-              style={{ margin: "0 10px", cursor: "pointer" }}
-            />
+            <Link to="checkout">
+              <FaShoppingCart
+                color="#F5F5F5"
+                size="1.3em"
+                style={{ margin: "0 10px", cursor: "pointer" }}
+              />
+            </Link>
             <FaHeart
               color="#F5F5F5"
               size="1.3em"

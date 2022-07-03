@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ContainerCarousel } from "./styles.js";
 import { products } from "../../mock/products";
 import { categories } from "../../mock/categories";
+import { Link } from "react-router-dom";
 
 import imgCategory from "../../assets/images/categories/1.svg";
 
@@ -28,7 +29,9 @@ export const CarouselComponent = ({ isCategory }) => {
               ))
             : randomProducts(6).map((item, index) => (
                 <>
-                  <img src={item.image} alt="" />
+                  <Link to="produto">
+                    <img src={item.image} alt="" />
+                  </Link>
                 </>
               ))}
         </ContainerCarousel>

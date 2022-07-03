@@ -1,32 +1,23 @@
 import React from "react";
-import { Divider, Image, ContainerCarousel } from "./styles.js";
+import { Image, ContainerCarousel } from "./styles.js";
 import { PromotionsEmail } from "../../components/PromotionsEmail/";
 import banner from "../../assets/images/banner/cropped.16_to_9.png";
 import { CarouselComponent } from "../../components/Carousel/";
 import { FooterComponent } from "../../components/Footer/";
+import { SectionTitleComponent } from "../../components/SectionTitle/index.jsx";
 
 const Home = () => {
-  const DividerComponent = ({ text }) => {
-    return (
-      <>
-        <Divider>
-          <div>{text}</div>
-        </Divider>
-      </>
-    );
-  };
-
   return (
     <div>
       <Image src={banner} alt="" />
 
-      <DividerComponent text="Destaque" />
+      <SectionTitleComponent text="Destaque" variation="center" />
 
       <ContainerCarousel>
         <CarouselComponent />
       </ContainerCarousel>
 
-      <DividerComponent text="Promoções" />
+      <SectionTitleComponent text="Promoções" variation="center" />
 
       <ContainerCarousel>
         <CarouselComponent />
@@ -34,7 +25,7 @@ const Home = () => {
 
       <PromotionsEmail />
 
-      <DividerComponent text="Categorias" />
+      <SectionTitleComponent text="Categorias" variation="center" />
 
       <ContainerCarousel>
         <CarouselComponent isCategory={true} />
