@@ -49,3 +49,39 @@ export const ScrollContainer = styled.div`
     transition: 300ms;
   }
 `;
+
+export const ContainerInput = styled.div`
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+`;
+
+export const RowBetween = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const ButtonCard = styled.div`
+  display: flex;
+  height: 31px;
+  width: 170px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+
+export const ButtonRed = styled.div`
+  display: flex;
+  height: 31px;
+  color: #fff;
+  font-size: 0.8em;
+  border-radius: 3px;
+  background-color: #950101;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;

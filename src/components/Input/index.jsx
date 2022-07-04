@@ -1,11 +1,11 @@
-import {Container, Label, Input} from './styles.js'
+import { useState } from "react";
+import { Container, Label, Input } from "./styles.js";
 
-export const InputComponent = ({number, placeholder}) => {
-    return(
-        <Container>
-            <Label>{number}</Label>
-            <Input placeholder={placeholder}/>
-        </Container>
-       
-    )
-}
+export const InputComponent = ({ number, placeholder }) => {
+  return (
+    <Container>
+      {/* <Label>{number}</Label> */}
+      <Input placeholder={placeholder} />
+    </Container>
+  );
+};

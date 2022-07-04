@@ -1,8 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Button = styled.div`
     height: 45px;
-    width: 500px;
+    max-width: 500px;
+    width:100%;
     font-family:"Souce Sans Pro", sans-serif;
     background-color: #950101;
     color:#fff;
@@ -15,4 +16,4 @@ export const Button = styled.div`
     cursor:pointer;
     :hover{
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-`
+`;
