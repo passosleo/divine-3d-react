@@ -14,6 +14,7 @@ import { ProductCardComponent } from "../../components/ProductCard";
 import { CardPaymentComponent } from "../../components/CardPayment";
 import { InputComponent } from "../../components/Input";
 import product from "../../assets/images/vasos/product.jpg";
+import { ModalidadeEntrega } from "../../components/ModalidadeEntrega";
 
 const Checkout = () => {
   return (
@@ -58,7 +59,9 @@ const Checkout = () => {
               <ButtonCard>
                 <p> 3 parcelas de R$59,80</p>
               </ButtonCard>
-              <p style={{ marginTop: 25 }}>Total: R$59,80</p>
+              <p style={{ marginTop: 25, fontWeight: "bold", fontSize: 20 }}>
+                Total: R$59,80
+              </p>
             </RowBetween>
             <ButtonRed>Finalizar Pedido</ButtonRed>
           </ContainerInput>
@@ -68,6 +71,7 @@ const Checkout = () => {
             text="Modalidade de Entrega"
             variation="left"
           />
+          <ModalidadeEntrega></ModalidadeEntrega>
         </Col>
       </Flex>
     </Container>

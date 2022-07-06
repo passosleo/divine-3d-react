@@ -51,7 +51,7 @@ export const ScrollContainer = styled.div`
 `;
 
 export const ContainerInput = styled.div`
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   margin: 0 auto;
 `;
@@ -75,7 +75,7 @@ export const ButtonCard = styled.div`
 
 export const ButtonRed = styled.div`
   display: flex;
-  height: 31px;
+  height: 40px;
   color: #fff;
   font-size: 0.8em;
   border-radius: 3px;

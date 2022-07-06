@@ -8,15 +8,15 @@ export const CardPaymentComponent = () => {
     <>
       <Container>
         <Card>
-          <FaCreditCard color="#950101" size="2em" />
+          <FaCreditCard color="#950101" size="2.5em" />
           <p>Crédito</p>
         </Card>
         <Card>
-          <FaCreditCard color="#950101" size="2em" />
-          <p>Boleto</p>
+          <FaCreditCard color="#950101" size="2.5em" />
+          <p>Débito</p>
         </Card>
         <Card>
-          <FaBarcode color="#950101" size="2em" />
+          <FaBarcode color="#950101" size="2.5em" />
           <p>Boleto</p>
         </Card>
         <Card>
