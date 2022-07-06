@@ -2,21 +2,25 @@ export const categories = [
   {
     id: 1,
     name: "decorações",
-    image: "",
+    image:
+      "https://res.cloudinary.com/leopassos/image/upload/v1657039503/divine-3d/vasos.svg",
   },
   {
     id: 2,
     name: "vasos",
-    image: "",
+    image:
+      "https://res.cloudinary.com/leopassos/image/upload/v1657039503/divine-3d/utilidades.svg",
   },
   {
     id: 3,
     name: "utils",
-    image: "",
+    image:
+      "https://res.cloudinary.com/leopassos/image/upload/v1657039503/divine-3d/decoracoes.svg",
   },
   {
     id: 4,
     name: "esculturas",
-    image: "",
+    image:
+      "https://res.cloudinary.com/leopassos/image/upload/v1657039503/divine-3d/escultura.svg",
   },
 ];
