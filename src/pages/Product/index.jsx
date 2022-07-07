@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   BoldText,
   Button,
@@ -117,8 +118,12 @@ const Product = () => {
             </div>
           </SpacedContainer>
           <JustifyEndContainer>
-            <ButtonComponent variation="white" text="Adicionar ao carrinho" />
-            <ButtonComponent variation="red" text="Comprar" />
+            <Link to="/checkout">
+              <ButtonComponent variation="white" text="Adicionar ao carrinho" />
+            </Link>
+            <Link to="/checkout">
+              <ButtonComponent variation="red" text="Comprar" />
+            </Link>
           </JustifyEndContainer>
         </ProductContainer>
       </FlexContainer>

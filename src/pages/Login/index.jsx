@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Container,
   Row,
@@ -12,7 +13,7 @@ import {
   Gmail,
 } from "./styles";
 import { InputComponent } from "../../components/Input";
-import { ButtonComponent } from "../../components/ButtonRed";
+import { ButtonComponent } from "../../components/Button";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
@@ -22,7 +23,9 @@ const Login = () => {
         <Section>
           <Title>Cadastrar-se</Title>
           <InputComponent placeholder="Email" />
-          <ButtonComponent text="Cadastro" />
+          <Link to="/cadastro">
+            <ButtonComponent text="Cadastro" variation="red" />
+          </Link>
         </Section>
         <Divider />
         <Section>
@@ -31,7 +34,9 @@ const Login = () => {
             <InputComponent placeholder="Email" />
             <InputComponent placeholder="Senha" />
           </div>
-          <ButtonComponent text="Login" />
+          <Link to="/">
+            <ButtonComponent text="Login" variation="red" />
+          </Link>
         </Section>
       </Row>
       <Sociais>

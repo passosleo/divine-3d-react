@@ -5,7 +5,6 @@ import { ContainerCarousel } from "./styles.js";
 import { products } from "../../mock/products";
 import { Link } from "react-router-dom";
 import { categories } from "../../mock/categories";
-import imgCategory from "../../assets/images/categories/1.svg";
 
 export const CarouselComponent = ({ isCategory }) => {
   const randomProducts = (amount) => {
@@ -23,9 +22,7 @@ export const CarouselComponent = ({ isCategory }) => {
           {isCategory
             ? categories.map((item) => (
                 <>
-                  {categories.map(() => (
-                    <img src={categories.image} alt="" />
-                  ))}
+                  <img src={item.image} alt={item.name} />
                 </>
               ))
             : randomProducts(6).map((item, index) => (

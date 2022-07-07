@@ -39,7 +39,9 @@ const Layout = ({ children }) => {
               style={{ margin: "0 10px", cursor: "pointer" }}
             />
             <Divider />
-            <img src={avatar} alt="Logo Divine 3D" />
+            <Link to="/login">
+              <img src={avatar} alt="Logo Divine 3D" />
+            </Link>
           </UserActions>
         </HeaderContent>
       </Header>
