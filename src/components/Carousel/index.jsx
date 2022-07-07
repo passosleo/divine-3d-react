@@ -22,13 +22,13 @@ export const CarouselComponent = ({ isCategory }) => {
           {isCategory
             ? categories.map((item) => (
                 <>
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name}/>
                 </>
               ))
             : randomProducts(6).map((item, index) => (
                 <>
                   <Link to="produto">
-                    <img src={item.image} alt="" />
+                    <img src={item.image} alt={item.name} />
                   </Link>
                 </>
               ))}

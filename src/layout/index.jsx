@@ -12,7 +12,7 @@ import {
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import logo from "../assets/images/logo.png";
 import avatar from "../assets/images/avatar.png";
-
+import {FooterComponent} from '../components/Footer'
 const Layout = ({ children }) => {
   return (
     <>
@@ -46,6 +46,7 @@ const Layout = ({ children }) => {
         </HeaderContent>
       </Header>
       <Container>{children}</Container>
+      <FooterComponent/>
     </>
   );
 };

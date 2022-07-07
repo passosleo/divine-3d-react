@@ -30,8 +30,7 @@ const Home = () => {
       <ContainerCarousel>
         <CarouselComponent isCategory={true} />
       </ContainerCarousel>
-
-      <FooterComponent></FooterComponent>
+ 
     </div>
   );
 };
