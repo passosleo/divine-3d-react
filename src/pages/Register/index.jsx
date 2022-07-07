@@ -1,5 +1,5 @@
 import React from "react";
-import { InputComponent } from "../../components/Input";
+import { InputComponent } from "../../components/InputCadastro";
 import { ButtonComponent } from "../../components/ButtonRed";
 import { Checkbox, Container, Termos, Title } from "./styles.js";
 
