@@ -15,6 +15,7 @@ import { CardPaymentComponent } from "../../components/CardPayment";
 import { InputComponent } from "../../components/Input";
 import product from "../../assets/images/vasos/product.jpg";
 import { ModalidadeEntrega } from "../../components/ModalidadeEntrega";
+import { AddressCardComponent } from "../../components/AddressCard";
 
 const Checkout = () => {
   return (
@@ -42,6 +43,20 @@ const Checkout = () => {
         </Col>
         <Col>
           <SectionTitleComponent text="Endereço de Entrega" variation="left" />
+          <Flex>
+            <AddressCardComponent
+              address="Rua Sargento Silva, 122"
+              city="Rolante - RS"
+              cep="95690-000"
+              style={{ marginRight: 25 }}
+            />
+            <AddressCardComponent
+              address="Rua Marechal Frota, 431"
+              city="Taquara - RS"
+              cep="95600-000"
+              style={{ marginLeft: 25 }}
+            />
+          </Flex>
         </Col>
       </Flex>
       <Flex>

@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
   a {
       text-decoration: none;
   }
+
+  button { 
+    font-family: "Source Sans Pro", Sans-Serif;
+  }
 `;
 
 export default GlobalStyle;
