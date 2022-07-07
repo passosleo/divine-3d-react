@@ -11,7 +11,7 @@ export const Button = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-top: 15px;
     cursor:pointer;
     :hover{
